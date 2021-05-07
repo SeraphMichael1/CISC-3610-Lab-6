@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 6: Audio</title>
+    </head>
+    <body>
+        <div id="buttons" style="border: 2px solid black; padding: 1rem; display: inline-flex">
+            <button onclick="playAudio('Train Horn')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="Train Horn"><source src="assets/audio/Train Horn.mp3" type="audio/mp3"></audio>
+                <b>Train Horn</b>
+            </button>
+            <button onclick="playAudio('Store Bell')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="Store Bell"><source src="assets/audio/Store Bell.mp3" type="audio/mp3"></audio>
+                <b>Store Bell</b>
+            </button>
+            <button onclick="playAudio('Blue Jay')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="Blue Jay"><source src="assets/audio/Blue Jay.mp3" type="audio/mp3"></audio>
+                <b>Blue Jay</b>
+            </button>
+            <button onclick="playAudio('Air Raid Siren')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="Air Raid Siren"><source src="assets/audio/Air Raid Siren.mp3" type="audio/mp3"></audio>
+                <b>Air Raid Siren</b>
+            </button>
+            <button onclick="playAudio('Rain')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="Rain"><source src="assets/audio/Rain.mp3" type="audio/mp3"></audio>
+                <b>Rain</b>
+            </button>
+        </div>
+        <br/>
+        <a href='https://seraphmichael1.github.io/'>Go Back</a>
+        <script>
+            function playAudio(sound)
+            {
+                let audio = document.getElementById(sound);
+                audio.play();
+            }
+        </script>
+    </body>
+</html>
